@@ -1,53 +1,32 @@
-package chenbzh;
+package chenbzh.second;
 
 public class TelPhone {
-	//属性,成员变量,封装
 	private double screen;
 	private double cpu;
 	private double men;
-	//调用
-	public double getScreen(){
+	
+	public void sendMessage(){
+		System.out.println("可以发送短信");
+	}
+	
+	public double getScreen() {
 		return screen;
 	}
-	
-	public void setScreen(double newScreen){
-		screen = newScreen;
+	public void setScreen(double screen) {
+		this.screen = screen;
 	}
-	
-	public double getCpu(){
+	public double getCpu() {
 		return cpu;
 	}
-	
-	public void setCpu(double newCpu){
-		cpu = newCpu;
+	public void setCpu(double cpu) {
+		this.cpu = cpu;
 	}
-	
-	public double getMen(){
+	public double getMen() {
 		return men;
 	}
 	
-	public void setMen(double newMen){
-		men = newMen;
+	public void setMen(double men){
+		this.men = men;
 	}
-	//方法，局部变量
-	void call(){
-		System.out.println("具有打电话的功能");		
-	}
-	void text(){
-		System.out.println("screen:"+screen+"cpu:"+cpu+"men:"+men+"具有发短信的功能");
-	}
-	//无参构造方法
-	public TelPhone(){
-		screen = 5.2;
-		cpu = 4.0;
-		men = 3.5;
-		System.out.println("无参构造方法执行了，并设定了默认值");
-	}
-	//有参构造方法
-	public TelPhone(double newscreen,double newcpu,double newmen){
-		screen = newscreen;
-		cpu = newcpu;
-		men = newmen;
-		System.out.println("有参构造方法执行了");
-	}
+	
 }
