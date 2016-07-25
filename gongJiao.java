@@ -1,12 +1,13 @@
-package duotai;
+package com.imooc;
 
-public class gongJiao extends jiaoTong {
-	String fangshi = "陆地";
-	int number = 80;
-	int price = 3;
-	public void shuxing(){
-		System.out.println("方式:" + fangshi);
-		System.out.println("数量:" + number);
-		System.out.println("价格:" + price);
+public class gongJiao extends che {
+	int zaiHuo = 0;
+	int zaiKe = 30;
+	int price = 2500;
+	@Override
+	public void shuxing() {
+		// TODO Auto-generated method stub
+		System.out.println("公交车 载客30人 价格2500");
 	}
+
 }
